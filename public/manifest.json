@@ -1,25 +1,35 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
+  "name": "Metaco Dev Tools",
+  "description": "The power of React and TypeScript for building interactive Chrome extensions",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+      "default_popup": "index.html#popup",
+      "default_title": "Metaco Dev Tools"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "webRequest",
+    "tabs",
+    "storage"
+ ],
+ "host_permissions": [
+  "https://*/*"
+ ],
+ "content_scripts": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["./plugins/bootstrap.js","./plugins/jquery.min.js", "./plugins/httpRequest.js","./static/js/content.js"],
+        "css": ["./plugins/content.css"]
     }
   ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background": {
+    "service_worker": "./static/js/background.js"
+  },
+  "icons": { 
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
 }

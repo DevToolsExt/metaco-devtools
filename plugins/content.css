@@ -1,0 +1,30 @@
+
+
+.metaco-dev-tools-btn-parent{
+    justify-content: center !important;
+}
+
+.metaco-dev-tools-btn-parent button{
+
+    font-family: Roboto, sans-serif;
+    font-weight: 0;
+    font-size: 14px;
+    color: #fff;
+    background-color: #f35936;
+    padding: 10px 30px;
+    border: none;
+    box-shadow: none;
+    border-radius: 50px;
+    transition : 546ms;
+    transform: translateY(0);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    }
+
+    .metaco-dev-tools-btn-parent button:hover{
+
+        transition : 546ms;
+        padding: 10px 50px;
+        transform : translateY(-0px);
+        }

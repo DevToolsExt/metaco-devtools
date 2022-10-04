@@ -1,0 +1,13 @@
+.ace-jsoneditor.ace_editor{
+    
+    background-color: transparent !important;
+}
+
+.ace-jsoneditor .ace_scroller{
+        
+    background-color: transparent !important;
+}
+
+.ace-jsoneditor .ace_gutter{
+    background-color: transparent !important;
+}
