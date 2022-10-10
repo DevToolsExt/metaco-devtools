@@ -259,6 +259,7 @@ function MainApp({ navigate }: WithNavigationType) {
                   sx={{
                     ".MuiSelect-select": {
                       padding: "5px 14px",
+                      width: "45px !important",
                     },
                   }}
                   value={getAppSettings().selectedDomain.id ?? domains[0].id}

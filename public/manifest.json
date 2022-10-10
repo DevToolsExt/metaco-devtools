@@ -1,7 +1,7 @@
 {
   "name": "Metaco Dev Tools",
-  "description": "The power of React and TypeScript for building interactive Chrome extensions",
-  "version": "1.0",
+  "description": "Extends Metaco GUI and other features to help developers. Intented for development environment only and not recommended to use production/mainnet credentials.",
+  "version": "1.0.0",
   "manifest_version": 3,
   "action": {
       "default_popup": "index.html#popup",

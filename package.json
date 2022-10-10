@@ -1,6 +1,7 @@
 {
-  "name": "metaco-extension",
-  "version": "0.1.0",
+  "name": "metaco-dev-tools",
+  "version": "1.0.0",
+  "author": "Jun Bosque <j.bosque@archax.com>",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.4",
